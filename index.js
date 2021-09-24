@@ -16,6 +16,7 @@ const test = (inputString) => {
     const stringArray = inputString.split('');
     const uniqueCharacters = new Set(stringArray);
     uniqueCharacters.forEach((character)=>{
+        if(character === ' ') return;
         resultCount[character] = countCharacters(character, stringArray);
     })
     return resultCount;
