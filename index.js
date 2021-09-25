@@ -10,6 +10,7 @@ const countCharacters = (character, inputString) => {
     return count;
 }
 
+//write a function that takes a string and returns count of each character in the string.
 const test = (inputString) => {
     //check if input is valid
     if(typeof inputString !== 'string' || inputString.length == 0) return {};
