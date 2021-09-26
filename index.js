@@ -15,11 +15,7 @@ const countFrequency = (array) => {
     let result = {}
     for(const arrElement of array) {
         let elementCount = result[arrElement];
-        if(!elementCount) {
-            result[arrElement] = 1;
-        } else {
-            result[arrElement] = ++elementCount;
-        }
+        result[arrElement] = !elementCount ? 1 : ++elementCount;
     }
     return result;
 }
